@@ -90,6 +90,8 @@ Execute a cron job every 5 Minutes = */5 * * * *
 
 You can specify a timezone as well:
 
+If a timezone is specified, a job name must be specified as well as the first parameter.
+
 ```js
 var j = schedule.scheduleJob('job name', '0 14 * * *', 'Asia/Shanghai', function(){
   console.log('Will execute on 14:00:00 GMT+8:00 (CST) everyday');
